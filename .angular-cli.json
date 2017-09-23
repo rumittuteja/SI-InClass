@@ -12,7 +12,7 @@
         "assets",
         "favicon.ico",
         "manifest.json",
-        "styles.css"
+        "./styles.css"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -64,9 +64,6 @@
       "config": "./karma.conf.js"
     }
   },
-  "scripts":[
-    "../node_modules/chart.js/dist//Chart.js"
-  ],
   "defaults": {
     "styleExt": "css",
     "prefixInterfaces": false,
