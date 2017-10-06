@@ -51,7 +51,7 @@ const appRoutes: Routes = [
     AlltimesComponent,
     ProfileComponent,
     SettingsComponent,
-    FielderrorsComponent
+    FielderrorsComponent,
   ],
   imports: [
     BrowserModule,
