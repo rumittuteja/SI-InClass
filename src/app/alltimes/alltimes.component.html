@@ -40,12 +40,12 @@
         <label for="tableSearch">Search: </label>
         <input id="tableSearch" #tableSearch type="text" placeholder="Search All The Things">
         <button type="button" pButton icon="fa-table" label="Export" (click)="dt.exportCSV()" style="float:right;"></button>
-        <button pButton type="button" label="Add Time" id="btnAddTime" (click)="displayEntryDialog = true" ></button>
+        <button pButton type="button" label="Add Time" id="btnAddTime" (click)="displayEntryForm = true" ></button>
       </p-footer>
     </p-dataTable>
     <p-contextMenu #tableContextMenu [model]="contextMenu"></p-contextMenu>
 
-    <p-dialog header="Add Time Entry"  [(visible)]="displayEntryDialog" [width]="700" [modal]="true" [responsive]="true">
+    <p-dialog header="Add Time Entry"  [(visible)]="displayEntryForm" [width]="700" [modal]="true" [responsive]="true">
       <form class="ui-g" [formGroup]="timeEntryForm" (ngSubmit)="onSaveComplete()"> 
         <p-panel  class="ui-g-12">
             <div class="ui-g">
